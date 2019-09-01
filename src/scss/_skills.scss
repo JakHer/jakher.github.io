@@ -27,4 +27,61 @@
 
         }
     }
+    &-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-column-gap: 1.5rem;
+        @media (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+        &__header{
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2.75rem;  
+            position: relative;
+            margin-top: 128px;
+            @media (max-width: 768px) {
+                margin-top: 64px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                height: 4px;
+                width: 5rem;
+                top: -1.5rem;
+                left: 0;
+                background: $green;
+                border-radius: 8px;
+            }    
+        }
+        &__list{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                grid-column-gap: 1.5rem;
+                padding: 0;
+                margin-top: calc(1.5rem + 4px);
+        }
+        &__item{
+            color: $smallFont;
+            list-style-type: none;
+            font-size: 1.125rem;
+            line-height: 2.5rem;
+            padding: 11px 0 11px 30px;
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 22px;
+                left: 0;
+                height: 18px;
+                width: 18px;
+                background: url(../assets/img/check-circle.svg);
+                @media (max-width:768px) {
+                    top: 18px;
+                }
+            }
+        }
+    }
 }
