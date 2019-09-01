@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500,600&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -307,6 +308,47 @@ template {
 [hidden] {
   display: none; }
 
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: calc(8rem - 16px) 16px 11.5rem; }
+  .hero__header {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    max-width: 780px;
+    padding-bottom: 1rem;
+    margin: 0; }
+  .hero__paragraph {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    color: #52606D;
+    max-width: 680px;
+    padding-bottom: 3.75rem;
+    margin: 0; }
+  .hero__email {
+    line-height: 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #0593FB;
+    text-decoration: none;
+    cursor: pointer; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -316,7 +358,11 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  color: #171F3F;
+  background: #fff;
+  font-family: 'Poppins', sans-serif; }
+
+.main {
+  border: 16px solid #171F3F; }
 
 /*# sourceMappingURL=main.css.map */
