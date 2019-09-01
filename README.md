@@ -4,7 +4,7 @@
 
 Portfolio website build after WTF course.
 
-##
+## Technology & tools used
 
 - Visual Studio Code
 - SASS
