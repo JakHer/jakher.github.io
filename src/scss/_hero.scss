@@ -32,6 +32,11 @@
         color: $blue;
         font-size: 1.25rem;
         font-weight: 500;
+        cursor: pointer;
+        transition: .4s ease all;
+        &:hover{
+            opacity: .7;
+        }
     }
     &__email{
         line-height: 2rem;
@@ -41,6 +46,12 @@
         text-decoration: none;
         cursor: pointer;
         position: relative;
+        transition: .4s ease opacity;
+        &:hover{
+            &:hover{
+                opacity: .7;
+            }
+        }
         &::after{
             content: '';
             position: absolute;
