@@ -20,9 +20,9 @@ fetch(`https://api.github.com/users/JakHer/repos?sort=updated`)
         </div>
 
         <div class="projects__links">
-    ${homepage ? `<a class="projects__demo" href="${homepage}" target="_blank rel=" nofollow noreferrer"" > Demo</a >` : ''
+    ${homepage ? `<a class="projects__button projects__button--demo" href="${homepage}" target="_blank rel=" nofollow noreferrer"" >Demo</a >` : ''
         }
-    <a class="projects__github" href="${html_url}" target="_blank rel=" nofollow noreferrer"" > GitHub</a >
+    <a class="projects__button projects__button--github" href="${html_url}" target="_blank rel=" nofollow noreferrer"" >GitHub</a >
         </div >
       </li > `
       console.log(html_url)
