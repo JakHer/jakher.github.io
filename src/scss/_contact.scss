@@ -1,0 +1,57 @@
+.contact{
+    background: $font;
+    color: $main;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: calc(8rem - 16px) 16px 2.5rem;
+    @media (max-width: 768px) {
+    padding: 60px 20px 60px 20px;
+}
+    &__heading{
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.75rem;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            height: 4px;
+            width: 5rem;
+            top: -1.5rem;
+            left: 0;
+            background: $blue;
+            border-radius: 8px;
+        }
+    }
+    &__paragraph{
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    &__list{
+        margin-top: 24px;
+        display: flex;
+        padding-left: 0;
+    }
+    &__item{
+        list-style-type: none;
+        & + &{
+            margin-left: 1.5rem;
+        }
+
+    }
+    &__email{
+        color: $blue;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin-top: 48px;
+        @media (max-width: 768px) {
+            margin-top: 24px;
+        }
+    }
+}
