@@ -347,7 +347,13 @@ template {
   .hero__link {
     color: #0593FB;
     font-size: 1.25rem;
-    font-weight: 500; }
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all; }
+    .hero__link:hover {
+      opacity: .7; }
   .hero__email {
     line-height: 2rem;
     font-size: 1.25rem;
@@ -355,7 +361,12 @@ template {
     color: #0593FB;
     text-decoration: none;
     cursor: pointer;
-    position: relative; }
+    position: relative;
+    -webkit-transition: .4s ease opacity;
+    -o-transition: .4s ease opacity;
+    transition: .4s ease opacity; }
+    .hero__email:hover:hover {
+      opacity: .7; }
     .hero__email::after {
       content: '';
       position: absolute;
