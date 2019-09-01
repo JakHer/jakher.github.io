@@ -1,23 +1,23 @@
 {
-  "name": "wtf-gulp-starter",
+  "name": "jakher.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "predeploy": "gulp build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pagesv-d distv -b master"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maciejkorsan/wtf-gulp-starter.git"
+    "url": "git+https://github.com/jakher/jakher.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maciejkorsan/wtf-gulp-starter/issues"
+    "url": "https://github.com/jakher/jakher.github.io/issues"
   },
-  "homepage": "https://github.com/maciejkorsan/wtf-gulp-starter#readme",
+  "homepage": "https://github.com/jakher/jakher.github.io#readme",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
