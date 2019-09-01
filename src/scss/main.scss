@@ -1,5 +1,7 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,600&display=swap');
+@import "_hero";
 
 
 html {
@@ -13,4 +15,9 @@ html {
 body {
   color: $font;
   background: $main;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main{
+  border: 16px solid #171F3F;
 }

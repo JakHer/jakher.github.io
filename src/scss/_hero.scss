@@ -1,0 +1,36 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: calc(8rem - 16px) 16px 11.5rem;;
+
+    &__header{
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        max-width: 780px;
+        padding-bottom: 1rem;
+        margin: 0;
+    }
+    &__paragraph{
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        color: $smallFont;
+        max-width: 680px;
+        padding-bottom: 3.75rem;
+        margin: 0;
+    }
+    &__email{
+        line-height: 2rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: $blue;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
