@@ -2,9 +2,20 @@
 
 # jakher.github.io
 
-Portfolio website
+Portfolio website build after WTF course.
 
-## Uruchom stronę lokalnie
+##
+
+- Visual Studio Code
+- SASS
+- Figma
+- Fetch API
+- CSS Grid
+- CSS Flexbox
+- webpack
+- gulp
+
+### Uruchom stronę lokalnie
 
 `npm install -g gulp-cli`
 
@@ -12,7 +23,7 @@ Portfolio website
 
 `gulp`
 
-## Hosting stron
+### Hosting stron
 
 [GH Pages ](https://jakher.github.io/)
 
