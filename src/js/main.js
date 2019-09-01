@@ -25,6 +25,5 @@ fetch(`https://api.github.com/users/JakHer/repos?sort=updated`)
     <a class="projects__button projects__button--github" href="${html_url}" target="_blank" rel="nofollow noreferrer" >GitHub</a >
         </div >
       </li > `
-      console.log(html_url)
     }
   })
