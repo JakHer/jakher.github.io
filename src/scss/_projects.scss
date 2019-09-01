@@ -84,6 +84,10 @@
         align-items: center;
         justify-content: center;
         position: relative;
+        transition: .4s ease opacity;
+        &:hover{
+            opacity: .7;
+        }
         &:nth-child(1){
             margin-right: 40px;
         }

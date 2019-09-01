@@ -9,8 +9,11 @@
     padding: calc(8rem - 16px) 16px 2.5rem;
     @media (max-width: 768px) {
     padding: 60px 20px 60px 20px;
-}
+    }
     &__heading{
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
         font-weight: 600;
         font-size: 2rem;
         line-height: 2.75rem;
@@ -24,14 +27,24 @@
             left: 0;
             background: $blue;
             border-radius: 8px;
+            transition: .4s ease width;
         }
+        &:hover::before{
+            width: 50%;
+        }    
     }
     &__paragraph{
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
         font-weight: 300;
         font-size: 1.25rem;
         line-height: 2.25rem;
     }
     &__list{
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
         margin-top: 24px;
         display: flex;
         padding-left: 0;
@@ -43,13 +56,28 @@
         }
 
     }
+    &__logo{
+        height: 32px;
+        width: 32px;
+        transition: .4s ease transform;
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
     &__email{
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
         color: $blue;
         text-decoration: none;
         font-weight: 500;
         font-size: 1.25rem;
         line-height: 2rem;
         margin-top: 48px;
+        transition: .4s ease opacity;
+        &:hover{
+            opacity: .7;
+        }
         @media (max-width: 768px) {
             margin-top: 24px;
         }

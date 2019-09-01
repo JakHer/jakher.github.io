@@ -27,6 +27,10 @@
             bottom: -16px;
             left: 0;
             opacity: 0.5;
+            transition: .4s ease background;
+        }
+        &:hover::after{
+            background: $blue;
         }
     }
     &-list{
@@ -55,12 +59,16 @@
                 left: 0;
                 background: $green;
                 border-radius: 8px;
+                transition: .4s ease width;
                 .skills-list--something &{
                     background: $violet;
                 }
                 .skills-list--want &{
                     background: $beforeBlue;
                 }
+            }
+            &:hover::before{
+                width: 100%;
             }    
         }
         &__list{
