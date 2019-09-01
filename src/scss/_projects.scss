@@ -33,6 +33,9 @@
         grid-column-gap: 1.5rem;
         grid-row-gap: 1.5rem;
         padding: 0;
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
     }
     &__item{
         background: $main;
@@ -70,5 +73,13 @@
         align-items: center;
         background: $grey;
         padding: 16px 48px;
+    }
+    &__demo{
+        padding-right: 82px;
+        font-weight: 500;
+        font-size: 1.125;
+        line-height: 2rem;
+        color: $blue;
+        text-decoration: none;
     }
 }

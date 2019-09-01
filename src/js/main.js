@@ -16,13 +16,13 @@ fetch(`https://api.github.com/users/JakHer/repos?sort=updated`)
         <div class="projects__container">
         <img class="projects__img" src="../assets/img/githubIcon.svg" alt="github icon.">
         <h3 class="projects__heading">${name}</h3>
-        <p class="projects__paragraph">${description ? description : ''}</p>
+          ${description ? ` <p class="projects__paragraph">${description}</p>` : ''}
         </div>
 
         <div class="projects__links">
     ${homepage ? `<a class="projects__demo" href="${homepage}" target="_blank rel=" nofollow noreferrer"" > Demo</a >` : ''
         }
-    <a class="projects__demo" href="${html_url}" target="_blank rel=" nofollow noreferrer"" > GitHub</a >
+    <a class="projects__github" href="${html_url}" target="_blank rel=" nofollow noreferrer"" > GitHub</a >
         </div >
       </li > `
       console.log(html_url)
