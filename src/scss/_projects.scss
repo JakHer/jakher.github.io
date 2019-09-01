@@ -28,5 +28,47 @@
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+        padding: 0;
+    }
+    &__item{
+        background: $main;
+        list-style-type: none;
+        border-radius: 8px;
+        box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__container{
+        padding: 48px 48px 0;
+    }
+    &__img{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 1rem;       
+    }
+    &__heading{
+        font-weight: 600;
+        font-size:  1.25rem;
+        line-height: 2.25rem;
+        padding-bottom: 8px;
+    }
+    &__paragraph{
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 2rem;
+        color: $smallFont;
+        padding-bottom: 3rem;
+    }
+    &__links{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: $grey;
+        padding: 16px 48px;
     }
 }

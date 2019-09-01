@@ -14,7 +14,7 @@ fetch(`https://api.github.com/users/JakHer/repos?sort=updated`)
       repoList.innerHTML +=
         `<li class="projects__item">
         <div class="projects__container">
-        <img src="../assets/img/githubIcon.svg" alt="github icon.">
+        <img class="projects__img" src="../assets/img/githubIcon.svg" alt="github icon.">
         <h3 class="projects__heading">${name}</h3>
         <p class="projects__paragraph">${description ? description : ''}</p>
         </div>
