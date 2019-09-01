@@ -424,7 +424,12 @@ template {
       background: #CBD2D9;
       bottom: -16px;
       left: 0;
-      opacity: 0.5; }
+      opacity: 0.5;
+      -webkit-transition: .4s ease background;
+      -o-transition: .4s ease background;
+      transition: .4s ease background; }
+    .skills__header:hover::after {
+      background: #0593FB; }
   .skills-list {
     display: -ms-grid;
     display: grid;
@@ -453,11 +458,16 @@ template {
         top: -1.5rem;
         left: 0;
         background: #06C847;
-        border-radius: 8px; }
+        border-radius: 8px;
+        -webkit-transition: .4s ease width;
+        -o-transition: .4s ease width;
+        transition: .4s ease width; }
         .skills-list--something .skills-list__header::before {
           background: #653CAD; }
         .skills-list--want .skills-list__header::before {
           background: #2251CC; }
+      .skills-list__header:hover::before {
+        width: 100%; }
     .skills-list__list {
       display: -ms-grid;
       display: grid;
@@ -588,7 +598,12 @@ template {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: relative; }
+    position: relative;
+    -webkit-transition: .4s ease opacity;
+    -o-transition: .4s ease opacity;
+    transition: .4s ease opacity; }
+    .projects__button:hover {
+      opacity: .7; }
     .projects__button:nth-child(1) {
       margin-right: 40px; }
     .projects__button--demo::before {
@@ -637,6 +652,9 @@ template {
     .contact {
       padding: 60px 20px 60px 20px; } }
   .contact__heading {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
     font-weight: 600;
     font-size: 2rem;
     line-height: 2.75rem;
@@ -649,12 +667,23 @@ template {
       top: -1.5rem;
       left: 0;
       background: #0593FB;
-      border-radius: 8px; }
+      border-radius: 8px;
+      -webkit-transition: .4s ease width;
+      -o-transition: .4s ease width;
+      transition: .4s ease width; }
+    .contact__heading:hover::before {
+      width: 50%; }
   .contact__paragraph {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 2.25rem; }
   .contact__list {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
     margin-top: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -664,13 +693,31 @@ template {
     list-style-type: none; }
     .contact__item + .contact__item {
       margin-left: 1.5rem; }
+  .contact__logo {
+    height: 32px;
+    width: 32px;
+    -webkit-transition: .4s ease transform;
+    -o-transition: .4s ease transform;
+    transition: .4s ease transform; }
+    .contact__logo:hover {
+      -webkit-transform: translateY(-10px);
+          -ms-transform: translateY(-10px);
+              transform: translateY(-10px); }
   .contact__email {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
     color: #0593FB;
     text-decoration: none;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 2rem;
-    margin-top: 48px; }
+    margin-top: 48px;
+    -webkit-transition: .4s ease opacity;
+    -o-transition: .4s ease opacity;
+    transition: .4s ease opacity; }
+    .contact__email:hover {
+      opacity: .7; }
     @media (max-width: 768px) {
       .contact__email {
         margin-top: 24px; } }
