@@ -344,13 +344,33 @@ template {
     max-width: 680px;
     padding-bottom: 3.75rem;
     margin: 0; }
+  .hero__link {
+    color: #0593FB;
+    font-size: 1.25rem;
+    font-weight: 500; }
   .hero__email {
     line-height: 2rem;
     font-size: 1.25rem;
     font-weight: 500;
     color: #0593FB;
     text-decoration: none;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
+    .hero__email::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      background: #0593FB;
+      bottom: -8px;
+      left: 0;
+      opacity: .4;
+      -webkit-transition: .4s ease opacity, .4s ease width;
+      -o-transition: .4s ease opacity, .4s ease width;
+      transition: .4s ease opacity, .4s ease width; }
+    .hero__email:hover::after {
+      opacity: 1;
+      width: 100%; }
 
 html {
   -webkit-box-sizing: border-box;
