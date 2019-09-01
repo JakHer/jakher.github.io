@@ -1,0 +1,32 @@
+.projects{
+    background: $grey;
+    width: 100%;
+    padding: calc(8rem - 16px) 16px 11.5rem;
+    @media (max-width: 768px) {
+    padding: 60px 20px 0 20px;
+}
+    &__heading{
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 3rem;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+    &__paragraph{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        color: $smallFont;
+        font-weight: 300;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+        padding-bottom: 4rem;
+    }
+    &__list{
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
