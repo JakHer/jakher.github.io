@@ -7,6 +7,9 @@
     width: 100%;
     margin: 0 auto;
     padding: calc(8rem - 16px) 16px 11.5rem;;
+    @media (max-width: 768px) {
+        padding: 60px 20px 0 20px;
+    }
 
     &__header{
         font-weight: 600;
@@ -25,6 +28,11 @@
         padding-bottom: 3.75rem;
         margin: 0;
     }
+    &__link{
+        color: $blue;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
     &__email{
         line-height: 2rem;
         font-size: 1.25rem;
@@ -32,5 +40,21 @@
         color: $blue;
         text-decoration: none;
         cursor: pointer;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: $blue;
+            bottom: -8px;
+            left: 0;
+            opacity: .4;
+            transition: .4s ease opacity, .4s ease width;
+        }
+        &:hover::after{
+            opacity: 1;
+            width: 100%;
+        }
     }
 }

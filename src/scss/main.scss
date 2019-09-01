@@ -6,6 +6,9 @@
 
 html {
   box-sizing: border-box;
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 }
 
 *, *:before, *:after {
@@ -20,4 +23,7 @@ body {
 
 .main{
   border: 16px solid #171F3F;
+  @media (max-width: 768px) {
+    border: none;
+  }
 }
