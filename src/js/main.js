@@ -18,7 +18,6 @@ fetch(`https://api.github.com/users/JakHer/repos?sort=updated`)
         <h3 class="projects__heading">${name}</h3>
           ${description ? ` <p class="projects__paragraph">${description}</p>` : ''}
         </div>
-
         <div class="projects__links">
     ${homepage ? `<a class="projects__button projects__button--demo" href="${homepage}" target="_blank" rel="nofollow noreferrer">Demo</a >` : ''
         }
