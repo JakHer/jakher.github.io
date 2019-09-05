@@ -1,5 +1,4 @@
 const repoList = document.querySelector(`.projects__list--js`);
-
 fetch(`https://api.github.com/users/JakHer/repos?sort=updated`)
   .then(resp => resp.json())
   .then(resp => {
