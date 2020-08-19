@@ -2,18 +2,22 @@ const repoList = document.querySelector(`.projects__list--js`);
 const baseURL = `https://api.github.com/users/JakHer/repos?sort=`;
 const sort = `updated`;
 
-const getRepo = async sort => {
+const getRepo = async (sort) => {
   try {
     const response = await fetch(`${baseURL}${sort}`);
     const data = await response.json();
-    return data;
+    var data2 = data.filter(function (item) {
+      return item.name !== `JakHer` && item.name !== `jakher.github.io`;
+    });
+    console.log(data2);
+    return data2;
   } catch (error) {
     console.log(error);
   }
 };
 
-getRepo(sort).then(data => {
-  for (let repo of data) {
+getRepo(sort).then((data2) => {
+  for (let repo of data2) {
     const { name, html_url, description, homepage } = repo;
 
     const li = document.createElement(`li`);
